@@ -1,0 +1,11 @@
+The application was created with Django, a python framework. If you want to use the application you will have 
+1)to cd into the project directory ie cd contoso_college.
+2)Once you are in the projectory, type "manage.py runserver" kickstart the application.
+3)Once the app start running you a url(http://127.0.0.1:8000/).
+4)Paste this "http://127.0.0.1:8000/admin" into any browser to visit the admin page. You will be asked for a username and password which are "oladimeji" and "Nigeria" respectively.
+5)You can decide to input data using the admin page or using the forms at the following URLS:
+*for inputting staff go to "http://127.0.0.1:8000/new_staff/".
+*for inputiing student go to "http://127.0.0.1:8000/new_student/".
+This was done just in case you decide to host the app.
+6)Once you are done with the application press "contrl c" in the command prompt to shut down the app.
+NOTE:YOU HAVE TO INSTALL DJANGO INTO YOUR SYSTEM BEFORE YOU CAN USE THE APP
