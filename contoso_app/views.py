@@ -33,12 +33,8 @@ def student_per_teacher(request):
         if not store.get(teacher):
             store[teacher]=list()
         store[teacher].append(record.student)
-    return HttpResponse(store[teacher])
-
-
-# def student_per_teacher():
-#      records=Teacher_Student.objects.all()
-#      return(records)
-         
+        print(store.items())
+       
+    return render(request,'teacher_student.html',{'store':store})
 
 

@@ -1,0 +1,47 @@
+<!--
+<html>
+<body>
+    <table style="width:100%">
+        {% for teacher,student in store.items %}
+            <tr>
+                <th>{{teacher}}</th>
+                <td>{{student}}</td>
+            </tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>
+
+-->
+<html>
+<body>
+    {% for teachers,students in store.items %}
+    
+    <table >
+
+        
+            <p>Staff no:{{teachers.staff_no}}</p>
+            <p>Staff fullname:{{teachers.first_name}} {{teachers.last_name}}</p>
+            
+            <tr>
+                <th>student no</th>
+                <th>first name</th>
+                <th>last name</th>
+                <th>class</th>
+
+            </tr>
+            {% for student in students %} 
+            <tr>
+            
+                <td>{{student.student_no}}</td>
+                <td>{{student.first_name}}</td>
+                <td>{{student.last_name}}</td>
+                <td>{{student.student_class}}</td>
+            </tr>
+            {% endfor %}
+            
+    </table>
+    {% endfor %}
+</body>
+</html>
